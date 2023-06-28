@@ -1,0 +1,14 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- State saat tombol di-hover -->
+    <item android:state_hovered="true">
+        <shape android:shape="rectangle">
+            <solid android:color="#00FF00" /> <!-- Warna hijau tua yang lebih gelap saat di-hover -->
+        </shape>
+    </item>
+    <!-- State default tombol -->
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@color/hijau_tua" /> <!-- Warna hijau tua default -->
+        </shape>
+    </item>
+</selector>

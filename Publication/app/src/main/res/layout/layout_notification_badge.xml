@@ -1,0 +1,21 @@
+<!-- layout_notification_badge.xml -->
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/badge_background">
+
+    <TextView
+        android:id="@+id/notificationCountTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:gravity="center"
+        android:textSize="12sp"
+        android:paddingStart="4dp"
+        android:paddingEnd="4dp"
+        android:background="@drawable/badge_background"
+        android:layout_gravity="center"
+        android:visibility="visible" />
+
+</FrameLayout>

@@ -1,0 +1,11 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/theme_dark"
+        android:title="Dark Mode"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/theme_light"
+        android:title="Light Mode"
+        app:showAsAction="never" />
+</menu>

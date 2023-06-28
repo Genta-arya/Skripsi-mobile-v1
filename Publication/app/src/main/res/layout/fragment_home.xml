@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.home.ui.ui.PageActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:menu="@menu/option_menu"
+            android:background="@color/hijau_tua"
+            app:titleTextColor="@color/white"
+            app:title="Home" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+         >
+
+            <LinearLayout
+                android:id="@+id/slider_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <androidx.viewpager2.widget.ViewPager2
+                    android:id="@+id/view_pager"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                   />
+
+                <com.tbuonomo.viewpagerdotsindicator.WormDotsIndicator
+                    android:id="@+id/dots_indicator"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="12dp"
+                    app:dotsColor="@color/hijau_tua"
+                    app:dotsSize="10dp"
+                    app:dotsStrokeColor="@color/colorGray"
+                    app:layout_constraintTop_toBottomOf="@id/view_pager" />
+
+            </LinearLayout>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/content"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                app:cardCornerRadius="30dp"
+                android:layout_marginTop="25dp"
+                app:cardElevation="4dp"
+                android:layout_marginBottom="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/slider_layout">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:id="@+id/text_vision_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:text="Visi"
+
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/text_vision"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="Menjadi Organisasi yang Terbaik dan Profesional di Bidang Pengelolaan Pendapatan Daerah"
+                    />
+
+                    <TextView
+                        android:id="@+id/text_mission_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:text="Misi"
+
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/text_mission_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="Melaksanakan perencanaan, pengendalian dan monitoring pengelolaan pendapatan daerah yang sesuai dengan potensi daerah."
+                         />
+
+                    <TextView
+                        android:id="@+id/text_mission_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="Mengoptimalkan pemanfaatan aset daerah untuk mendukung peningkatan Pendapatan Asli Daerah (PAD)."
+              />
+
+                    <TextView
+                        android:id="@+id/text_mission_3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="Meningkatkan partisipasi masyarakat dalam pengelolaan pendapatan daerah."
+                      />
+
+                    <TextView
+                        android:id="@+id/text_mission_4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="Membuat kebijakan-kebijakan tentang peningkatan pendapatan daerah yang bersifat komprehensif dan berkelanjutan."
+                         />
+
+                    <TextView
+                        android:id="@+id/text_motto_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:text="Motto Pelayanan"
+
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/text_motto"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="Memberikan Pelayanan 'PRIMA' - Profesional, Ramah, Ikhlas, Mudah, dan Akuntabel"
+                        />
+
+                    <TextView
+                        android:id="@+id/text_info_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:text="Maklumat Pelayanan"
+
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/text_info"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="40dp"
+                        android:text="Dengan Ini Kami Segenap Aparatur Sipil Negara Badan Pendapatan Daerah Kabupaten Ketapang Menyatakan Sanggup Dan Siap Menyelenggarakan Pelayanan Administrasi Perpajakan Secara Profesional Dan Transparan Serta Memberikan Informasi Yang Jelas Dan Tepat Kepada Wajib Pajak"
+                         />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
